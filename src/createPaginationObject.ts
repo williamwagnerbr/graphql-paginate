@@ -37,13 +37,13 @@ const createPaginationTypes = function (type: GraphQLObjectType) {
   return { PaginationType, PaginationEdgeType }
 }
 
-const GraphQLPaginationObjectType = function (type: GraphQLObjectType) {
+const createPaginationType = function (type: GraphQLObjectType) {
   return createPaginationTypes(type).PaginationType;
 }
 
 export {
   createPaginationTypes,
-  GraphQLPaginationObjectType
+  createPaginationType
 }
 
-export default GraphQLPaginationObjectType;
+export default createPaginationType;

@@ -1,9 +1,21 @@
-import createPaginationObject from './createPaginationObject';
+import {
+  createPaginationType,
+  createPaginationTypes
+} from './createPaginationObject';
 import interceptResolver from './interceptResolver';
+import interceptArgs from './interceptArgs';
+import interceptQuery from './interceptQuery';
+import PaginationInputType from './types/PaginationInputType';
+import SorterInputType from './types/SorterInputType';
 
 export {
-  createPaginationObject,
-  interceptResolver
+  createPaginationType,
+  createPaginationTypes,
+  interceptResolver,
+  interceptArgs,
+  interceptQuery,
+  SorterInputType,
+  PaginationInputType
 }
 
-export default createPaginationObject;
+export default createPaginationType;
